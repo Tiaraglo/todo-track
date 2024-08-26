@@ -15,11 +15,29 @@ export default {
   props: ["todo"],
   methods: {
     toggleDone() {
-      this.$store.commit("TOOGLE_TODO", this.todo);
+      this.$store.commit("todos/TOGGLE_TODO", this.todo);
     },
     deleteTodo() {
-      this.$store.commit("DELETE_TODO", this.todo);
+      this.$store.commit("todos/DELETE_TODO", this.todo);
     },
   },
 };
 </script>
+
+<style scoped>
+.task {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.is-complete {
+  background-color: #e0ffe0;
+}
+.buttons {
+  margin-top: 10px;
+}
+.delete {
+  color: red;
+}
+</style>

@@ -1,4 +1,4 @@
-export { default as Todo } from '../../components/Todo.vue'
+export { default as Todo } from '../../components/todo.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

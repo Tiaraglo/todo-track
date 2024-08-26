@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fira sans", sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 body {
-  background-color: rgb(38, 35, 54);
-  color: #fff;
+  background-color: #e0f7fa;
+  color: #333;
+  line-height: 1.6;
 }
 
 main {
@@ -16,17 +17,22 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e0f7fa, #b3e5fc);
 }
 
 main h1 {
   font-size: 2.5rem;
   text-transform: capitalize;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #0277bd;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
 }
 
 main h1 ~ p {
   margin-bottom: 2rem;
+  color: #0288d1;
 }
 
 main .create-new {
@@ -34,39 +40,57 @@ main .create-new {
   justify-content: center;
   align-items: center;
   max-width: 480px;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
 }
 
 main .create-new input {
   appearance: none;
   border: none;
   outline: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 3px solid #0288d1;
   background-color: transparent;
-  color: #fff;
+  color: #333;
   font-size: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin: 0;
-  transition: 0.4s;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  transition: border-bottom-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 main .create-new input:focus {
-  border-bottom-color: rgb(47, 214, 111);
+  border-bottom-color: #03a9f4;
+  box-shadow: 0 0 12px rgba(3, 169, 244, 0.4);
 }
 
 main .create-new button {
   appearance: none;
   border: none;
   outline: none;
-  background-color: rgb(47, 214, 111);
+  background-color: #03a9f4;
   text-transform: uppercase;
   font-weight: bold;
-  color: #000;
+  color: #fff;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  margin-left: 0.5rem;
+  border-radius: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+main .create-new button:hover {
+  background-color: #0288d1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+main .create-new button:active {
+  background-color: #0277bd;
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 main .tasks {
@@ -79,10 +103,18 @@ main .tasks .task {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(52, 47, 78);
+  background-color: #ffffff;
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   margin-bottom: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .tasks .task:hover {
+  background-color: #e3f2fd;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transform: scale(1.02);
 }
 
 main .tasks .task .buttons {
@@ -93,26 +125,49 @@ main .tasks .task button {
   appearance: none;
   border: none;
   outline: none;
-  background-color: rgb(47, 214, 111);
+  background-color: #03a9f4;
   text-transform: uppercase;
   font-weight: bold;
-  color: #000;
+  color: #fff;
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   margin-left: 0.5rem;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+main .tasks .task button:hover {
+  background-color: #0288d1;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+main .tasks .task button:active {
+  background-color: #0277bd;
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 main .tasks .task button.delete {
-  background-color: crimson;
-  color: #eee;
+  background-color: #f44336;
+  color: #fff;
+}
+
+main .tasks .task button.delete:hover {
+  background-color: #c62828;
+}
+
+main .tasks .task button.delete:active {
+  background-color: #b71c1c;
 }
 
 .tasks .task.is-complete {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .tasks .task.is-complete .content {
   text-decoration: line-through;
+  color: #90a4ae;
 }
