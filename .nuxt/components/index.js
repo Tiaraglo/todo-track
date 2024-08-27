@@ -1,4 +1,4 @@
-export { default as Todo } from '../../components/todo.vue'
+export const Todo = () => import('../../components/todo.vue' /* webpackChunkName: "components/todo" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
