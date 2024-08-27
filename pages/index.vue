@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Todo from "~/components/todo.vue";
+import Todo from "../components/Todo.vue";
 
 export default {
   components: { Todo },
