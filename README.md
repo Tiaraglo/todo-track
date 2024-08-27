@@ -1,6 +1,6 @@
 # todo-track
 
-The website display and explanation are in the task.md file
+The website display and explanation for the answers task are in the task.md file
 
 - todo-track : Todo-Track is a browser-based application designed to manage your to-do lists. It allows you to create tasks, track their completion status, and delete tasks that are no longer needed.
 - tech stack : vue.js and nuxt.js, deployment on vercel
