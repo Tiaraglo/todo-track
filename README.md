@@ -1,5 +1,20 @@
 # todo-track
 
+The website display and explanation are in the task.md file
+
+- todo-track : Todo-Track is a browser-based application designed to manage your to-do lists. It allows you to create tasks, track their completion status, and delete tasks that are no longer needed.
+- tech stack : vue.js and nuxt.js, deployment on vercel
+
+- here's the deployment url link : https://todo-track-beta.vercel.app
+
+- here's the landing page
+
+![alt text](<Tangkapan Layar 2024-08-27 pukul 12.04.34.png>)
+
+- here's the page for add and tracking todo list
+
+![alt text](<Tangkapan Layar 2024-08-27 pukul 12.07.02.png>)
+
 ## Build Setup
 
 ```bash
@@ -40,7 +55,6 @@ More information about the usage of this directory in [the documentation](https:
 Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
 
 ### `pages`
 
