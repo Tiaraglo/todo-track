@@ -14,3 +14,14 @@
 ## Task #3: Build your own todo app
 
 - todo-track : Todo-Track is a browser-based application designed to manage your to-do lists. It allows you to create tasks, track their completion status, and delete tasks that are no longer needed.
+- tech stack : vue.js and nuxt.js, deployment on vercel
+
+- here's the deployment url link : https://todo-track-beta.vercel.app
+
+- here's the landing page
+
+![alt text](<Tangkapan Layar 2024-08-27 pukul 12.04.34.png>)
+
+- here's the page for add and tracking todo list
+
+![alt text](<Tangkapan Layar 2024-08-27 pukul 12.07.02.png>)
