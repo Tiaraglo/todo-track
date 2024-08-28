@@ -2,6 +2,8 @@
 
 - Google Tasks
 
+I chose Google Tasks because it is a simple task management tool that integrates with various Google products such as Gmail and Google Calendar, and it is easy to use without needing to create another account if you already have Gmail.
+
 ## Task #2: Classify the features of the todo app
 
 - Must-have features : Task Creation: Ability to add tasks with a simple description.
